@@ -1,0 +1,98 @@
+ /* src/register.css */
+ .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #A3BCF9;
+    position: relative;
+    
+  }
+
+  .register-card{
+    background-color: #f0f0f0;
+    padding: 55px;
+    border-radius: 8px;
+    text-align: justify;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .register-card p{
+    font-size: small;
+  }
+
+  .register-card-input-name{
+    color: #3E6680;
+    font-weight: 500;
+  }
+  
+  .register-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .register-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .register-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+/*   .register-container .buttons {
+    display: flex;
+    justify-content: space-between;
+  } */
+  
+  .register-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3E6680;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .register-container button:hover {
+    background-color: #00487C;
+  }
+
+/*   .register-container .back-button {
+    background-color: #6c757d;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .register-container .back-button:hover {
+    background-color: #5a6268;
+  } */
+
+  .register-container .back-button {
+    background-color: #6c757d;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register-container .back-button:hover {
+    background-color: #5a6268;
+  }
+  
+  .register-container .back-button svg {
+    color: white;
+    font-size: 20px;
+  }

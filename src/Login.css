@@ -1,0 +1,109 @@
+/* src/Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #A3BCF9;
+  }
+  
+  .login-card {
+    background-color: #f0f0f0;
+    padding: 55px;
+    border-radius: 8px;
+    text-align: justify;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+/*   .titulo{
+    text-align: center;
+    color: #3E6680;
+  }
+  .inicio-sesion{
+    color: #a3bcf9;
+    
+  } */
+  
+  .login-card h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #3E6680;
+    font-weight: 400;
+
+    
+  }
+  
+  .login-card h2 {
+    margin-top: 0;
+    color: #a3bcf9;
+    font-weight: 600;
+    font-size: large;
+  }
+
+  .login-card p{
+    font-size: small;
+  }
+
+  .login-card-input-name{
+    color: #3E6680;
+    font-weight: 500;
+  }
+  
+  .login-card input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+/*   .login-card button {
+    width: 100%;
+    padding: 8px;
+    background-color: #A3BCF9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+
+  .login-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-card button {
+    padding: 8px;
+    background-color: #A3BCF9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Para que el botón ocupe todo el ancho del contenedor */
+}
+  
+  .admin-panel-text {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 800;
+        
+
+  }
+  
+/*   .login-card input, .login-card button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    
+}
+
+.login-card input {
+    border: 1px solid #ccc;
+}
+
+.login-card button {
+    background-color: #A3BCF9;
+    color: white;
+    border: none;
+    cursor: pointer;
+} */

@@ -1,0 +1,301 @@
+/* src/Dashboard.css */
+.dashboard-container {
+    padding: 0px;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+       
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #A3BCF9;
+    padding: 20px;
+    flex: 0 0 auto;
+    
+    
+  }
+  
+  .company-name {
+    font-size: 30px;
+    font-weight: 600;
+    color: #f0f0f0;
+    
+  }
+
+  .banner-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .banner-buttons button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .banner-buttons .register-button {
+    background-color: #8ACB88; /* Color verde para el botón de registrar */
+  }
+  
+  .banner-buttons .register-button:hover {
+    background-color: #218838;
+  }
+  
+  .banner-buttons .logout-button {
+    background-color: #D54B4B; /* Color rojo para el botón de cerrar sesión */
+  }
+  
+  .banner-buttons .logout-button:hover {
+    background-color: #c82333;
+  }
+
+/*   .logout-button {
+    background-color: #D54B4B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+
+  .dashboard-body {
+    display: flex; /* Utiliza flexbox para el layout */
+    flex-direction: row;
+    padding: 5px;
+    /*flex: 1;*/
+    overflow-y: hidden;
+    flex: 1 1 auto;
+  }
+
+  .patient-history {
+    flex: content; /* Ocupa la mitad del espacio disponible */
+  /*margin-right: 20px; /* Espacio entre el listado de pacientes y las últimas emergencias */
+  align-items: center;
+  /* border: 1px solid #00487C; */
+  /* border-radius: 2%; */
+  padding: 20px;
+  margin-left: 2%;
+  /* height: 400px; */ /* Ajusta la altura según sea necesario */
+  overflow-y: scroll;
+  
+
+  
+  }
+
+  .search-bar {
+    /* Estilos de la barra de búsqueda */
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    width: calc(100% - 40px); /* Ajusta el ancho para coincidir con el contenedor */
+    max-width: 500px;
+    height: 15px;
+    border-radius: 2%;
+    border: 1px solid #00487C;
+    /*margin-left: 0px; /* Ajusta el margen para alinearlo a la izquierda */
+
+  }
+
+  .patient-list {
+    display: flex;
+    /*flex-wrap: wrap; /* Para que los pacientes se muestren en filas y se envuelvan automáticamente */
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    
+    
+  }
+
+  .patient-item {
+ /*    flex: 0 0 calc(50% - 20px); /* Tamaño de columna de 50% con margen */
+    margin: 5px;
+    padding: 20px 20%;
+    border: 1px solid #ccc;
+    
+  
+
+  }
+   
+  .emergency-list {
+    display: flex;
+    flex-direction: column; /* Muestra las tarjetas en una columna */
+    align-items: center; /* Alinea las tarjetas a la derecha */
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+/*     border: 1px solid #00487C;
+    border-radius: 2%; */
+    padding: 20px;
+    margin-right: 2%;
+
+    /* height: 400px; */ /* Ajusta la altura según sea necesario */
+    overflow-y: scroll;
+  }
+
+  .emergency-card {
+    height: auto;
+    width: 100%;
+    max-width: 350px; /* Ancho de la tarjeta de emergencia */
+    /*margin-right: 20px; /* Espacio entre la tarjeta y el borde derecho de la pantalla */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    padding: 15px;
+    border: 1px solid #A3BCF9;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    
+  }
+
+  .emergency-card:hover {
+    transform: scale(1.02);
+  }
+
+  .emergency-card-name{
+    color: #00487C;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: start;
+    overflow-wrap: break-word; 
+    
+
+  }
+
+  .emergency-card-ubi-bpm{
+    color: black;
+    text-align: start;
+    overflow-wrap: break-word;
+
+
+  }
+
+
+  .emergency-card-button{
+    background-color: #D54B4B;
+    color: white;
+    border: none;
+    /* padding: 10px 20px;*/
+    border-radius: 4px;
+    cursor: pointer;
+ /*    width: 150px;
+    height: 30px;
+    margin-top: 10px; */
+    width: 100%; /* Ajusta el botón al 100% del ancho de la tarjeta */
+    max-width: 150px; /* Ancho máximo para el botón */
+    height: 30px;
+    margin-top: 10px;
+    width: calc(100% - 20px);
+    
+  }
+  .emergency-card-button:hover {
+    background-color: #e53935; /* Color rojo más oscuro */
+  }
+  
+
+  .patient-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 10px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    table-layout: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  
+  .patient-table th,
+  .patient-table td {
+    border: 3px solid #00487c87;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; /* Evita que el texto en las celdas de la tabla se desborde */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  
+   .patient-table th {
+    background-color: #A3BCF9;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+    
+  } 
+  .patient-table td {
+    text-align: center;
+  }
+
+  .patient-table td.location {
+    max-width: 150px; /* Ancho máximo para la columna de ubicación */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word; /* Permite que el texto largo se rompa en múltiples líneas */
+  }
+
+  .no-data {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+  }
+  .patient-table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Alternancia de color en filas */
+  }
+
+  .new-emergency-message {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .emergency-card.highlighted {
+    /* Estilos cuando la tarjeta está resaltada */
+    box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.5); /* Sombra roja para resaltar */
+  }
+
+
+/*   .dashboard-container .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A3BCF9;
+    padding: 10px;
+  }
+  
+  .dashboard-container .register-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .dashboard-container .register-button:hover {
+    background-color: #0056b3;
+  } */
+
+  .dismiss-icon {
+    color: #aaa; /* Color del icono de descarte */
+    cursor: pointer;
+    margin-left: 20px; /* Mueve el icono hacia la derecha */
+    
+  }
+  
+  .dismiss-icon:hover {
+    color: #f00; /* Cambia el color del icono al pasar el mouse sobre él */
+  }
+  
+ 
