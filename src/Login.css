@@ -70,6 +70,7 @@
   .login-button-container {
     display: flex;
     text-align: center;
+    padding: 8px;
     justify-content: center;
 }
 
