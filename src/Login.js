@@ -110,7 +110,7 @@ const Login = () => {
         <div className="login-card">
           <h1> Plataforma DRA</h1>
           <h2> Iniciar Sesión</h2>
-          <p style={{ color: "#cbcbc6" }}>Hola! Que bueno verte de nuevo</p>
+          <p style={{ color: "#a0a09b" }}>Hola! Que bueno verte de nuevo</p>
 
           <p className="login-card-input-name">Email:</p>
           <input
