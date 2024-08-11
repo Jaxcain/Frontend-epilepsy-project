@@ -106,45 +106,37 @@ const Login = () => {
 
 
     return (
-        <div className="login-container">
-            <div className="login-card">
-                <h1 > Plataforma DRA</h1>
-                <h2 > Iniciar Sesión</h2>
-                <p>Hola! Que bueno verte de nuevo</p>
+      <div className="login-container">
+        <div className="login-card">
+          <h1> Plataforma DRA</h1>
+          <h2> Iniciar Sesión</h2>
+          <p style={{ color: "#cbcbc6" }}>Hola! Que bueno verte de nuevo</p>
 
+          <p className="login-card-input-name">Email:</p>
+          <input
+            type="email"
+            placeholder="Correo Electrónico"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <p className="login-card-input-name">Contraseña:</p>
+          <input
+            type="password"
+            placeholder="Contraseña"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <div className="login-button-container">
+            <button onClick={handleLogin}>Iniciar Sesión</button>
+          </div>
 
-                <p className='login-card-input-name'>Email:</p>
-                <input
-                    type="email"
-                    placeholder="Correo Electrónico"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <p className='login-card-input-name'>Contraseña:</p>
-                <input
-                    type="password"
-                    placeholder="Contraseña"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
-                <div className="login-button-container">
-
-                    <button onClick={handleLogin}>Iniciar Sesión</button>
-
-                </div>
-
-
-                <div className="admin-panel-text">
-                    <p>PANEL ADMINISTRADOR</p>
-                </div>
-
-            </div>
-
-            {/*  <button onClick={handleSigui}>Siguiente</button> */}
-
-
-
+          <div className="admin-panel-text">
+            <p>PANEL ADMINISTRADOR</p>
+          </div>
         </div>
+
+        {/*  <button onClick={handleSigui}>Siguiente</button> */}
+      </div>
     );
 };
 
